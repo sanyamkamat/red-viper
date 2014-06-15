@@ -11,7 +11,7 @@ app.config(function ($routeProvider) {
         });
 });
 
-app.constant('grid_size', 3);
+app.constant('grid_size', 6);
 
 app.factory('game', function () {
     return new Game();

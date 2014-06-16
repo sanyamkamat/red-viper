@@ -1,10 +1,10 @@
 .wrapper {
-    margin: 0px auto;
-    text-align: center;
-    background: #ccc;
-    border: 1px solid #ddd;
+    /*margin: 0px auto;*/
+    /*text-align: center;*/
+    background: #FFF;
+    /*border: 1px solid #ddd;*/
     padding: 25px;
-    width: 414px;
+    width: 800px;
 }
 
 .action-bar {
@@ -20,8 +20,8 @@
 }
 
 .board {
-box-shadow(0 3 px 7 px rgba(0, 0, 0, 1));
-    border: 1px solid #999;
+    box-shadow(0 3 px 7 px rgba(0, 0, 0, 1));
+    /*border: 1px solid #999;*/
     margin: 0px auto;
 }
 
@@ -33,7 +33,8 @@ box-shadow(0 3 px 7 px rgba(0, 0, 0, 1));
     width: 136px;
     height: 136px;
     display: table-cell;
-    background-color: #ccc;
+    background-color: #fff;
+    text-align: center;
     border-bottom: 1px solid #999;
     border-right: 1px solid #999;
     cursor: pointer;

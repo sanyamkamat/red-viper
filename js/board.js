@@ -2,6 +2,7 @@
 
 var Board = function (grid) {
     grid = grid || 3;
+//    console.log("b grid "+grid)
     this.grid = grid;
     this.X = 1;
     this.O = -1;
@@ -82,7 +83,7 @@ Board.prototype = {
     // http://en.wikipedia.org/wiki/Alpha-beta_pruning
     negamaxSearch: function (depth, player, alpha, beta) {
         var size = 100;
-        var intelligence = 1;
+        var intelligence = 3;
         var undef;
         var i = this.grid * this.grid, min = -size, max, value, next;
         if (value = this.checkWinner(depth)) // either player won

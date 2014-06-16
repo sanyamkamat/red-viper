@@ -19,6 +19,7 @@ var Game = function (params) {
 
 Game.prototype = {
     start: function (grid, computer_first) {
+//        console.log("grid: "+ grid)
         this.grid = grid;
         this.computer_first = computer_first;
         this.board = new Board(this.grid);

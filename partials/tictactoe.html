@@ -5,8 +5,7 @@
 <!--<span>{{grid_size}}</span>-->
 <div class="wrapper" ng-show="grid_size">
   <div class="action-bar">
-    <input type="checkbox" value="{{computer_first}}" ng-model="computer_first" ng-checked="computer_first"/>Computer
-    First
+      <label for="cf_checkbox"><input id="cf_checkbox" type="checkbox" value="{{computer_first}}" ng-model="computer_first" ng-checked="computer_first"/>Computer First</label>
     <button id="start-game" ng-click="startGame(grid_size)">Restart game</button>
   </div>
 

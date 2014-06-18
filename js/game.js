@@ -43,8 +43,8 @@ Game.prototype = {
                     this.computer_move();
                 }
                 this.checkWinner();
-                if (!this.winner) {
-                    // this.tie = true;
+                if (this.board.isFull()) {
+                    this.tie = true;
                 }
             }
         }
@@ -57,11 +57,14 @@ Game.prototype = {
     },
     computer_move: function () {
         var next_move = this.board.compute_next_move();
+//        console.log("Comp move!: 01\n");
         if (typeof next_move === "undefined") {
             this.tie = true;
+//            console.log("Comp move!: 02 "+next_move+"\n");
         } else {
             this.board.move(next_move, this.current_player);
             this.current_player = this.current_player.is_computer ? this.manual_player : this.computer_player;
+//            console.log("Comp move!: 03 "+next_move+"\n");
         }
     }
 };

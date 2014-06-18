@@ -57,7 +57,9 @@ Board.prototype = {
     },
 
     move: function (index, player) {
+//        console.log("Can Move 01");
         if (this.canMove(index)) {
+//            console.log("Can Move");
             this.board[index] = player.symbol === 'x' ? this.X : this.O;
         }
     },
@@ -83,7 +85,7 @@ Board.prototype = {
     // http://en.wikipedia.org/wiki/Alpha-beta_pruning
     negamaxSearch: function (depth, player, alpha, beta) {
         var size = 100;
-        var intelligence = 3;
+        var intelligence = 6;
         var undef;
         var i = this.grid * this.grid, min = -size, max, value, next;
         if (value = this.checkWinner(depth)) // either player won

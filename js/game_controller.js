@@ -27,7 +27,7 @@ function GameController($scope, game, grid_size) {
         if (game.board && game.board.canMove(boardIndex) && !game.winner && !game.tie) {
             // make move
             game.move(boardIndex);
-            console.log("Made move!\n")
+//            console.log("Made move!\n")
             // check winner
             if (game.winner) {
                 if (game.winner === game.board.X) $scope.status_message = "you lose!";
